@@ -1,0 +1,36 @@
+tasks:
+  round1:
+    enabled: true
+    name: "T1 + T2 + T4"
+    description: "Fraud detection, category classification, and signal recognition on the full dialogue."
+    require_fields:
+      - think
+      - output
+    output_fields:
+      - is_fraud
+      - level_1_category
+      - signal_type
+      - level_3_signals
+      - confidence
+
+  round2:
+    enabled: true
+    name: "T3"
+    description: "Phase identification from dialogue prefixes."
+    output_fields:
+      - phase_type
+
+  judge:
+    enabled: true
+    name: "T5"
+    description: "Evidence-chain reasoning quality scored by a separate judge."
+
+cot_eval:
+  enabled: true
+  judge_votes: 2
+  variance_retry_threshold: 2
+  cooldown_seconds: 20
+  dimensions:
+    - evidence_alignment
+    - logical_coherence
+    - clarity

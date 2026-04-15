@@ -1,0 +1,16 @@
+runtime:
+  default_dataset_root: "./data/FraudRecon-Bench"
+  split_dataset_roots: {}
+  default_split: "test"
+  default_input_mode: "text" # text | audio | multimodal
+  eval_mode: "full" # full | full_no_t2 | round1_only | acc_only | category_only | signals_only | cot_only | t2_only
+  db_path: "./runs/eval_runs.db"
+  artifacts_dir: "./runs"
+  api_max_workers: 4
+  round1_max_tokens: 4096
+  dump_raw_responses: false
+  strip_tone_hints: false
+  max_retries: 2
+  backoff_seconds: 2
+  max_backoff_seconds: 20
+  jitter_ratio: 0.25
