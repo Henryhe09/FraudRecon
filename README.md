@@ -2,7 +2,7 @@
 
 This repository provides the benchmark and evaluation framework for **FraudRecon**, a multi-granularity audio-text benchmark for telecom fraud understanding introduced in our paper. The benchmark is designed to evaluate model capability from coarse fraud judgment to structured evidence-chain reasoning.
 
-> **Release Status:** This repository currently provides the evaluation framework, configuration files, documentation, and a minimal demo split for smoke testing. The full FraudRecon-Bench dataset is undergoing final organization, de-identification, quality verification, and compliance review. Dataset updates and the final release will be provided on [ModelScope](https://www.modelscope.cn/datasets/liujingxuanchn/FraudRecon).
+> **Release Status:** This repository provides the evaluation framework, configuration files, documentation, and a minimal demo split for smoke testing. The full FraudRecon dataset, including both training and test splits, is now available on [ModelScope](https://www.modelscope.cn/datasets/jensenlx/FraudRecon).
 
 ![FraudRecon overview](assets/fraudrecon-overview.png)
 
