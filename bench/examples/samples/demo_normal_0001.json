@@ -1,0 +1,73 @@
+{
+  "case_id": "demo_normal_0001",
+  "audio_path": "",
+  "reconstructed_dialogue": {
+    "flat_turns": [
+      {
+        "turn_id": 1,
+        "speaker": "S",
+        "utterance": "您好，这里是平台售后专线，我来帮您确认订单配送问题。",
+        "phase_id": 1,
+        "phase_type": "opening"
+      },
+      {
+        "turn_id": 2,
+        "speaker": "V",
+        "utterance": "好的，我的包裹一直没有更新。",
+        "phase_id": 1,
+        "phase_type": "opening"
+      },
+      {
+        "turn_id": 3,
+        "speaker": "S",
+        "utterance": "请确认一下尾号 4821 的订单，是这一单吗？",
+        "phase_id": 2,
+        "phase_type": "core_service"
+      },
+      {
+        "turn_id": 4,
+        "speaker": "V",
+        "utterance": "对，就是这单。",
+        "phase_id": 2,
+        "phase_type": "core_service"
+      },
+      {
+        "turn_id": 5,
+        "speaker": "S",
+        "utterance": "系统显示仓库晚发了一天，我可以为您申请催派和一张补偿券。",
+        "phase_id": 2,
+        "phase_type": "core_service"
+      },
+      {
+        "turn_id": 6,
+        "speaker": "V",
+        "utterance": "可以，帮我处理一下。",
+        "phase_id": 2,
+        "phase_type": "core_service"
+      },
+      {
+        "turn_id": 7,
+        "speaker": "S",
+        "utterance": "已经登记完成，稍后会收到短信通知。",
+        "phase_id": 3,
+        "phase_type": "closure"
+      },
+      {
+        "turn_id": 8,
+        "speaker": "V",
+        "utterance": "明白了，谢谢。",
+        "phase_id": 3,
+        "phase_type": "closure"
+      }
+    ]
+  },
+  "split": "test",
+  "data_type": "normal",
+  "is_fraud": false,
+  "is_augmented": false,
+  "metadata": {
+    "dialogue_stats": {
+      "num_turns": 8
+    }
+  }
+}

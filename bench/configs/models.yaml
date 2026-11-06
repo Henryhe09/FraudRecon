@@ -1,0 +1,18 @@
+models:
+  mock-main:
+    provider: mock
+    mode: main
+    supports_audio: true
+
+  mock-judge:
+    provider: mock
+    mode: judge
+    supports_audio: false
+
+  # Fill both fields before using this profile.
+  custom-model:
+    provider: openai_compatible
+    base_url: ""
+    model_name: ""
+    api_key_env: OPENAI_API_KEY
+    supports_audio: false

@@ -1,0 +1,64 @@
+{
+  "input_path": "ndrr/examples/narratives.json",
+  "model": "format-example",
+  "chunk_id": 0,
+  "chunk_size": 5000,
+  "start_index": 0,
+  "end_index": 0,
+  "total": 1,
+  "processed": 1,
+  "results": [
+    {
+      "index": 0,
+      "案件编号": "case_000001",
+      "案件类别": "冒充电商物流客服类",
+      "status": "ok",
+      "result": {
+        "fraud_type": "冒充电商物流客服类",
+        "victim_profile": {
+          "occupation": "未提及",
+          "vulnerability": "未提及"
+        },
+        "initial_contact": {
+          "channel": "电话",
+          "pretext": "订单异常",
+          "impersonated_identity": "购物平台客服"
+        },
+        "fraud_phases": [
+          {
+            "phase_id": 1,
+            "phase_type": "initial_contact",
+            "scammer_action": "致电用户，自称购物平台客服",
+            "scammer_speech_summary": "订单异常，需要按电话指引处理",
+            "victim_action": "接听电话",
+            "victim_psychology": "未提及",
+            "platforms_tools": [],
+            "financial_flow": {
+              "amount": null,
+              "from_account": null,
+              "to_account": null
+            }
+          },
+          {
+            "phase_id": 2,
+            "phase_type": "discovery",
+            "scammer_action": "未提及",
+            "scammer_speech_summary": "未提及",
+            "victim_action": "查看官方订单页面后发现没有异常，提出质疑并挂断电话",
+            "victim_psychology": "怀疑",
+            "platforms_tools": [
+              "官方订单页面"
+            ],
+            "financial_flow": {
+              "amount": null,
+              "from_account": null,
+              "to_account": null
+            }
+          }
+        ],
+        "turning_point": "查看官方订单页面后发现没有异常",
+        "total_loss": "0元"
+      }
+    }
+  ]
+}

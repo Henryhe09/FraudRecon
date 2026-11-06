@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+outputs/
+runs/
+*.egg-info/
+build/
+dist/
+/docs/CHANGELOG.md
